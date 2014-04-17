@@ -1,6 +1,16 @@
 
+#This function takes the following arguments and simulates a course of anticoagulation therapy.
+#avatars: A file includes avatars with assigned initial warfarin doses.
+#protocols: A desired dosing protocol for warfarin maintenance dosing.
+#initialDose: A relevant code for the dosing algorithm used for initial dosing.
+#numDaysToSimulate: A desired number of days for simulation.
+#maxDose: The upper limit of a range of warfarin dose.
+#numReplicates: Number of replication of a simulation.
+#maxTime: The time interval for getting INR and Dose calculations outputs.
+#rseed: random seeds.
+
 ##################################
-###        avatar loop         ###
+###    simulation function     ###
 ##################################
 processAvatar = function(avatars, protocol, initialDose, numDaysToSimulate, maxDose, numReplicates, maxTime, rseed) {
 
